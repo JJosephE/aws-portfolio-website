@@ -1,0 +1,9 @@
+{
+  "name": "aws-portfolio-workshop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A static portfolio site built with HTML and CSS.",
+  "scripts": {
+    "dev": "npx --yes serve . --listen 8000"
+  }
+}

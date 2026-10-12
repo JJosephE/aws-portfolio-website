@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found — Justin Joseph</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#0d1b2a" />
+  <!-- Absolute paths so this works regardless of which missing URL triggers it -->
+  <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Sora:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/portfolio.css" />
+  <style>
+    /* 404-specific overrides */
+    body { display: flex; flex-direction: column; min-height: 100svh; }
+    .lost { flex: 1; display: flex; align-items: center; }
+    .lost__inner { padding-block: 80px; }
+    .lost__code {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: clamp(96px, 18vw, 180px);
+      line-height: 0.9;
+      color: var(--teal);
+      letter-spacing: -0.04em;
+      margin-bottom: 20px;
+    }
+    .lost__title {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: clamp(26px, 4vw, 40px);
+      color: var(--ink);
+      margin-bottom: 14px;
+    }
+    .lost__text {
+      max-width: 44ch;
+      font-size: 17px;
+      color: var(--ink-mid);
+      margin-bottom: 36px;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="/" class="nav__logo">Justin <em>Joseph</em></a>
+    </div>
+  </header>
+
+  <main class="lost">
+    <div class="container lost__inner">
+      <p class="lost__code" aria-hidden="true">404</p>
+      <h1 class="lost__title">That page doesn't exist.</h1>
+      <p class="lost__text">
+        The URL you followed either moved or was never here.
+        Head back to the main site.
+      </p>
+      <a href="/" class="btn btn--fill">Back to the portfolio →</a>
+    </div>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Justin Joseph — Cybersecurity Portfolio</title>
+  <meta name="description" content="Justin Joseph is a cybersecurity intern at Broward County and Computer Science student at FIU, building practical skills in vulnerability management, endpoint security, and security awareness." />
+  <meta name="theme-color" content="#0d1b2a" />
+
+  <!-- Social preview — replace your-domain.com with your live URL after publishing -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://your-domain.com/" />
+  <meta property="og:title"       content="Justin Joseph — Cybersecurity Portfolio" />
+  <meta property="og:description" content="Cybersecurity intern at Broward County and CS student at FIU. Hands-on experience in vulnerability management, endpoint security, and security awareness." />
+  <meta property="og:image"       content="https://your-domain.com/assets/og-image.jpg" />
+  <meta name="twitter:card"       content="summary_large_image" />
+
+  <!-- Favicons -->
+  <link rel="icon"             href="assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="icon"             href="assets/favicon.svg"    type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Sora:wght@700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ── NAV ──────────────────────────────────────────────────────────────── -->
+  <header class="nav" role="banner">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__logo" aria-label="Justin Joseph — back to top">
+        Justin <em>Joseph</em>
+      </a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav__links">
+          <li><a href="#about"      class="nav__link">About</a></li>
+          <li><a href="#experience" class="nav__link">Experience</a></li>
+          <li><a href="#projects"   class="nav__link">Projects</a></li>
+          <li><a href="#timeline"   class="nav__link">Progress</a></li>
+          <li><a href="#skills"     class="nav__link">Skills</a></li>
+          <li><a href="#contact"    class="nav__link">Contact</a></li>
+          <li>
+            <a href="assets/9-28-2026JosephJustinResume_.pdf"
+               class="nav__cta"
+               target="_blank"
+               rel="noopener"
+               aria-label="View resume (opens PDF)">Resume ↗</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ── HERO ─────────────────────────────────────────────────────────────── -->
+    <section class="hero" id="top" aria-labelledby="hero-name">
+      <div class="container hero__inner">
+
+        <div class="hero__content">
+          <div class="hero__currently" aria-label="Current status">
+            <span class="currently__dot" aria-hidden="true"></span>
+            <div class="currently__grid">
+              <div class="currently__row">
+                <span class="currently__label">Now</span>
+                <span class="currently__value">Cybersecurity Intern · Broward County</span>
+              </div>
+              <div class="currently__row">
+                <span class="currently__label">Graduating</span>
+                <span class="currently__value">May 2027 · FIU</span>
+              </div>
+              <div class="currently__row">
+                <span class="currently__label">Learning</span>
+                <span class="currently__value">Offensive security &amp; cloud security</span>
+              </div>
+            </div>
+          </div>
+
+          <h1 class="hero__name" id="hero-name">Justin<br /><em>Joseph</em></h1>
+
+          <p class="hero__headline">Building practical skills to protect<br class="br-md" /> systems, people, and data.</p>
+
+          <p class="hero__bio">
+            Cybersecurity intern at Broward County and Computer Science student at FIU,
+            gaining hands-on experience in vulnerability management, endpoint security,
+            and security awareness.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--fill">Explore My Work</a>
+            <a href="#contact"  class="btn btn--outline">Connect With Me</a>
+            <a href="assets/9-28-2026JosephJustinResume_.pdf"
+               class="btn btn--ghost"
+               target="_blank"
+               rel="noopener"
+               aria-label="View resume PDF">Resume ↗</a>
+          </div>
+        </div>
+
+        <figure class="hero__photo" aria-hidden="true">
+          <img src="assets/Professional Headshot.jpeg"
+               alt="Justin Joseph"
+               class="hero__photo-img"
+               width="600"
+               height="720"
+               fetchpriority="high" />
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- ── ABOUT ─────────────────────────────────────────────────────────────── -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">About</span>
+          <h2 class="section__title" id="about-title">Who I Am</h2>
+        </header>
+
+        <div class="about">
+          <div class="about__text">
+            <p class="about__lead">
+              I'm a Computer Science student in the FIU Honors College, working toward a
+              B.S. with a minor in Mathematical Sciences — and figuring out how to turn
+              a genuine curiosity about security into a real career.
+            </p>
+            <p>
+              My interests sit at the intersection of vulnerability management, incident response,
+              cloud security, and detection engineering. What draws me to this field is the
+              investigative side — tracing how something broke, understanding why, and communicating
+              it clearly to the people who need to know.
+            </p>
+            <p>
+              I learn best by doing: I set up home labs, dig into tools hands-on, and look for ways
+              to apply classroom concepts to problems I encounter at work. Earning CompTIA Security+
+              in June 2026 was a milestone, but the tools and workflows I've picked up during my
+              internship have taught me far more about what security work actually looks like day to day.
+            </p>
+            <p class="about__cert">
+              <span class="cert-badge" aria-label="CompTIA Security+ certified, June 2026">
+                <span class="cert-badge__icon" aria-hidden="true">✓</span>
+                CompTIA Security+ · Earned June 2026
+              </span>
+            </p>
+          </div>
+
+          <dl class="about__card card" aria-label="Quick facts">
+            <div class="details__row">
+              <dt>University</dt>
+              <dd>Florida International University</dd>
+            </div>
+            <div class="details__row">
+              <dt>Honors College</dt>
+              <dd>Yes</dd>
+            </div>
+            <div class="details__row">
+              <dt>Degree</dt>
+              <dd>B.S. Computer Science</dd>
+            </div>
+            <div class="details__row">
+              <dt>Minor</dt>
+              <dd>Mathematical Sciences</dd>
+            </div>
+            <div class="details__row">
+              <dt>Graduating</dt>
+              <dd>May 2027</dd>
+            </div>
+            <div class="details__row">
+              <dt>Based in</dt>
+              <dd>South Florida</dd>
+            </div>
+            <div class="details__row">
+              <dt>Certification</dt>
+              <dd>CompTIA Security+</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EXPERIENCE ─────────────────────────────────────────────────────────── -->
+    <section class="section section--alt" id="experience" aria-labelledby="exp-title">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">Experience &amp; Impact</span>
+          <h2 class="section__title" id="exp-title">Where I've Contributed</h2>
+        </header>
+
+        <!-- Internship -->
+        <article class="exp-card card" aria-label="Broward County internship">
+          <div class="exp-card__head">
+            <div>
+              <h3 class="exp-card__role">Cyber Security Intern</h3>
+              <p class="exp-card__org">
+                Broward County Enterprise Technology Services
+                <span class="exp-card__location">· Fort Lauderdale, FL</span>
+              </p>
+            </div>
+            <span class="exp-card__date">
+              <time datetime="2025-11">Nov 2025</time> – Present
+            </span>
+          </div>
+
+          <p class="exp-card__intro">
+            Supporting the enterprise security team across vulnerability management, endpoint security,
+            and security awareness initiatives. Work spans tooling, coordination, and hands-on investigation
+            across a large county government environment.
+          </p>
+
+          <div class="exp-highlights" aria-label="Key contributions">
+            <div class="exp-highlight">
+              <span class="exp-highlight__num" aria-label="approximately 20 devices">~20</span>
+              <span class="exp-highlight__desc">
+                devices supported through Qualys VMDR vulnerability remediation — tracking tickets,
+                coordinating with device owners, and running rescans to verify fixes
+              </span>
+            </div>
+            <div class="exp-highlight">
+              <span class="exp-highlight__num" aria-label="400 plus employees">400+</span>
+              <span class="exp-highlight__desc">
+                employees supported by an enterprise encryption deployment I helped plan, test, and roll out
+              </span>
+            </div>
+            <div class="exp-highlight">
+              <span class="exp-highlight__num" aria-label="2,000 plus employees">2,000+</span>
+              <span class="exp-highlight__desc">
+                employees reached by cybersecurity and generative AI awareness training I contributed to
+              </span>
+            </div>
+          </div>
+
+          <ul class="exp-card__bullets">
+            <li>
+              <strong>Qualys VMDR:</strong> supported vulnerability remediation across ~20 devices
+              (averaging ~5 vulnerabilities each) through ticket follow-up, coordination with teams,
+              and verification rescans.
+            </li>
+            <li>
+              <strong>Qualys FIM:</strong> gained hands-on experience with File Integrity Monitoring
+              to track changes to critical system files.
+            </li>
+            <li>
+              <strong>Absolute Secure Endpoint:</strong> used for endpoint visibility and DLP —
+              device group management, scans, and reports surfacing unencrypted devices and potential
+              data exposure risks.
+            </li>
+            <li>
+              <strong>Enterprise encryption rollout:</strong> assisted with planning, testing, and
+              deploying encryption software for a 400+ employee environment.
+            </li>
+            <li>
+              <strong>Proofpoint ZenGuide:</strong> supported phishing simulations, documentation,
+              demos, and review of campaign results.
+            </li>
+            <li>
+              <strong>Security awareness:</strong> contributed to training materials on cybersecurity
+              and generative AI, completed by 2,000+ employees.
+            </li>
+            <li>
+              <strong>Investigation tools:</strong> used Active Directory, Group Policy, Windows
+              Registry, and PowerShell for device and user investigations.
+            </li>
+          </ul>
+
+          <p class="exp-card__note">
+            Note: the numbers above reflect initiatives I supported as part of a team, not independently led efforts.
+          </p>
+        </article>
+
+        <!-- NSBE -->
+        <article class="exp-card card" style="margin-top: 24px;" aria-label="NSBE Finance Chair">
+          <div class="exp-card__head">
+            <div>
+              <h3 class="exp-card__role">Finance Chair</h3>
+              <p class="exp-card__org">
+                National Society of Black Engineers (NSBE)
+                <span class="exp-card__location">· Florida International University</span>
+              </p>
+            </div>
+            <span class="exp-card__date">
+              <time datetime="2026-06">Summer 2026</time> – Present
+            </span>
+          </div>
+          <ul class="exp-card__bullets">
+            <li>
+              Collaborate with executive board members on organizational budget decisions
+              and financial planning for chapter initiatives.
+            </li>
+            <li>
+              Support sponsor outreach and relationship-building with companies and
+              organizations to secure resources for the chapter.
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ─────────────────────────────────────────────────────────── -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">Featured Projects</span>
+          <h2 class="section__title" id="projects-title">Selected Work</h2>
+        </header>
+
+        <div class="projects">
+
+          <!-- Wazuh -->
+          <article class="project card" aria-label="Wazuh SIEM Homelab project">
+            <div class="project__tag-row">
+              <span class="project__category">Team Project · Spring 2026</span>
+            </div>
+            <h3 class="project__title">Wazuh SIEM Homelab</h3>
+            <p class="project__summary">
+              Collaborated on a virtualized homelab using a Proxmox VM to deploy a Wazuh SIEM
+              environment, monitor endpoint security events, and gain hands-on experience
+              with real security monitoring workflows.
+            </p>
+            <dl class="project__breakdown">
+              <div>
+                <dt>What I did</dt>
+                <dd>Configured the Wazuh environment, connected and monitored multiple endpoints, and troubleshot networking, virtualization, and agent connectivity issues to get reliable monitoring in place.</dd>
+              </div>
+              <div>
+                <dt>What I learned</dt>
+                <dd>SIEM concepts in practice — endpoint monitoring, vulnerability visibility, and security event analysis — plus a lot about the patience required to debug agent connectivity issues in a virtualized environment.</dd>
+              </div>
+              <div>
+                <dt>Next step</dt>
+                <dd>Expand the lab with more attack scenarios, write detection rules for specific behaviors, and document findings as case studies.</dd>
+              </div>
+            </dl>
+            <ul class="project__tags" aria-label="Technologies used">
+              <li>Wazuh</li>
+              <li>SIEM</li>
+              <li>Proxmox</li>
+              <li>Endpoint monitoring</li>
+              <li>Linux</li>
+              <li>Virtualization</li>
+            </ul>
+          </article>
+
+          <!-- CVE Tracker -->
+          <article class="project card" aria-label="Cyber Threat Tracker project">
+            <div class="project__tag-row">
+              <span class="project__category">Academic</span>
+            </div>
+            <h3 class="project__title">Cyber Threat Tracker</h3>
+            <p class="project__summary">
+              An academic project that queries the NVD CVE API to retrieve and display
+              vulnerability data — an early exercise in working with security data sources
+              programmatically.
+            </p>
+            <dl class="project__breakdown">
+              <div>
+                <dt>What I did</dt>
+                <dd>Connected to the NVD CVE API, parsed vulnerability records, and built a simple interface for exploring CVE information.</dd>
+              </div>
+              <div>
+                <dt>What I learned</dt>
+                <dd>How CVE data is structured, how to work with public vulnerability APIs, and what vulnerability metadata like CVSS scores represents.</dd>
+              </div>
+              <div>
+                <dt>Next step</dt>
+                <dd>Add filtering by severity, expand the display, and connect it to a home lab environment for more realistic context.</dd>
+              </div>
+            </dl>
+            <ul class="project__tags" aria-label="Technologies used">
+              <li>NVD CVE API</li>
+              <li>JavaScript</li>
+              <li>REST APIs</li>
+              <li>Vulnerability data</li>
+            </ul>
+          </article>
+
+          <!-- Car Search -->
+          <article class="project card" aria-label="Car Search Platform project">
+            <div class="project__tag-row">
+              <span class="project__category">Team Project</span>
+            </div>
+            <h3 class="project__title">Car Search Platform</h3>
+            <p class="project__summary">
+              A collaborative software project building a vehicle search tool with dynamic
+              price filtering and a refined UI — my introduction to working within a multi-person
+              codebase and integrating separate pieces of work.
+            </p>
+            <dl class="project__breakdown">
+              <div>
+                <dt>What I did</dt>
+                <dd>Contributed to vehicle search functionality, dynamic price filtering, UI improvements, and integration work across the team's components.</dd>
+              </div>
+              <div>
+                <dt>What I learned</dt>
+                <dd>Coordinating development across a team, resolving integration challenges, and keeping a shared codebase consistent as features come together.</dd>
+              </div>
+              <div>
+                <dt>Next step</dt>
+                <dd>Add a write-up documenting the architecture decisions and what I'd approach differently.</dd>
+              </div>
+            </dl>
+            <ul class="project__tags" aria-label="Technologies used">
+              <li>Java</li>
+              <li>Git</li>
+              <li>UI design</li>
+              <li>Team collaboration</li>
+            </ul>
+          </article>
+
+          <!-- Workshops -->
+          <article class="project card" aria-label="Cybersecurity Workshops project">
+            <div class="project__tag-row">
+              <span class="project__category">Teaching · Past</span>
+            </div>
+            <h3 class="project__title">Cybersecurity Workshops</h3>
+            <p class="project__summary">
+              As a Code Crunch Tech Lead, helped design and deliver introductory cybersecurity
+              sessions covering Linux fundamentals, networking basics, and security concepts —
+              built for students encountering these topics for the first time.
+            </p>
+            <dl class="project__breakdown">
+              <div>
+                <dt>What I did</dt>
+                <dd>Planned session content, prepared hands-on exercises, and taught live workshops on cybersecurity fundamentals, Linux, and networking.</dd>
+              </div>
+              <div>
+                <dt>What I learned</dt>
+                <dd>Teaching forces you to identify gaps in your own understanding. Explaining concepts clearly to beginners sharpened how I think about them myself.</dd>
+              </div>
+              <div>
+                <dt>Takeaway</dt>
+                <dd>The ability to make technical concepts accessible to non-technical audiences — something I've continued to apply at work and in documentation.</dd>
+              </div>
+            </dl>
+            <ul class="project__tags" aria-label="Topics covered">
+              <li>Cybersecurity fundamentals</li>
+              <li>Linux</li>
+              <li>Networking</li>
+              <li>Technical education</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROGRESS / TIMELINE ────────────────────────────────────────────────── -->
+    <section class="section section--alt" id="timeline" aria-labelledby="timeline-title">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">My Progress</span>
+          <h2 class="section__title" id="timeline-title">The Road So Far</h2>
+          <p class="section__sub">Concrete milestones, not a progress bar.</p>
+        </header>
+
+        <ol class="timeline" aria-label="Career and education timeline">
+
+          <li class="timeline__item timeline__item--done">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__body">
+              <span class="timeline__date"><time datetime="2025-11">November 2025</time></span>
+              <h3 class="timeline__event">Started cybersecurity internship</h3>
+              <p class="timeline__detail">
+                Joined Broward County Enterprise Technology Services as a Cyber Security Intern —
+                first professional experience in a real security operations environment.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline__item timeline__item--done">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__body">
+              <span class="timeline__date"><time datetime="2026-06">June 2026</time></span>
+              <h3 class="timeline__event">Earned CompTIA Security+</h3>
+              <p class="timeline__detail">
+                Passed the Security+ exam, building a solid foundation across
+                network security, cryptography, threats, vulnerabilities, and
+                security architecture.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline__item timeline__item--done">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__body">
+              <span class="timeline__date"><time datetime="2026-09">September 2026</time></span>
+              <h3 class="timeline__event">Hands-on Qualys vulnerability management</h3>
+              <p class="timeline__detail">
+                Began active vulnerability management work using Qualys VMDR —
+                triaging findings, following up on remediation tickets, and running
+                verification rescans.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline__item timeline__item--now">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__body">
+              <span class="timeline__date">Ongoing</span>
+              <h3 class="timeline__event">Building depth in endpoint security &amp; awareness</h3>
+              <p class="timeline__detail">
+                Continuing work with Absolute Secure Endpoint, Proofpoint ZenGuide phishing
+                simulations, and security awareness training. Using PowerShell and Active
+                Directory for investigations.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline__item timeline__item--next">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__body">
+              <span class="timeline__date">Next</span>
+              <h3 class="timeline__event">Expand the home lab &amp; cloud security skills</h3>
+              <p class="timeline__detail">
+                Planning to extend the Wazuh home lab, write up project case studies,
+                and start developing hands-on experience in cloud security and detection
+                engineering.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline__item timeline__item--future">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__body">
+              <span class="timeline__date"><time datetime="2027-05">May 2027</time></span>
+              <h3 class="timeline__event">Graduate from FIU</h3>
+              <p class="timeline__detail">
+                Expected completion of B.S. in Computer Science with a minor in
+                Mathematical Sciences, FIU Honors College.
+              </p>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ── SKILLS ─────────────────────────────────────────────────────────────── -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">Skills &amp; Certifications</span>
+          <h2 class="section__title" id="skills-title">Tools &amp; Capabilities</h2>
+        </header>
+
+        <!-- Certifications -->
+        <div class="certs" aria-label="Certifications">
+          <h3 class="certs__heading">Certifications</h3>
+          <ul class="cert-list">
+            <li class="cert-item cert-item--earned">
+              <span class="cert-item__icon" aria-hidden="true">✓</span>
+              <div class="cert-item__info">
+                <strong>CompTIA Security+</strong>
+                <span>June 2026 – June 2029</span>
+              </div>
+            </li>
+            <li class="cert-item cert-item--earned">
+              <span class="cert-item__icon" aria-hidden="true">✓</span>
+              <div class="cert-item__info">
+                <strong>ITS: JavaScript</strong>
+                <span>Information Technology Specialist</span>
+              </div>
+            </li>
+            <li class="cert-item cert-item--earned">
+              <span class="cert-item__icon" aria-hidden="true">✓</span>
+              <div class="cert-item__info">
+                <strong>ITS: Python</strong>
+                <span>Information Technology Specialist</span>
+              </div>
+            </li>
+            <li class="cert-item cert-item--earned">
+              <span class="cert-item__icon" aria-hidden="true">✓</span>
+              <div class="cert-item__info">
+                <strong>Project Management Ready</strong>
+                <span>Project Management Institute</span>
+              </div>
+            </li>
+            <li class="cert-item cert-item--progress">
+              <span class="cert-item__icon" aria-hidden="true">◷</span>
+              <div class="cert-item__info">
+                <strong>AWS Cloud Practitioner</strong>
+                <span>In Progress</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skills-legend" aria-label="Legend">
+          <span class="legend-item legend-item--work">
+            <span class="legend-dot" aria-hidden="true"></span>
+            Workplace experience
+          </span>
+          <span class="legend-item legend-item--lab">
+            <span class="legend-dot" aria-hidden="true"></span>
+            Home lab / personal projects
+          </span>
+          <span class="legend-item legend-item--dev">
+            <span class="legend-dot" aria-hidden="true"></span>
+            Development &amp; coursework
+          </span>
+        </div>
+
+        <div class="skill-groups">
+
+          <div class="skill-group card">
+            <h3 class="skill-group__title">Vulnerability &amp; Endpoint Security</h3>
+            <ul class="skill-chips" aria-label="Vulnerability and endpoint security tools">
+              <li class="chip chip--work" title="Workplace experience">Qualys VMDR</li>
+              <li class="chip chip--work" title="Workplace experience">Qualys FIM</li>
+              <li class="chip chip--work" title="Workplace experience">Absolute Secure Endpoint</li>
+              <li class="chip chip--work" title="Workplace experience">CrowdStrike (visibility)</li>
+              <li class="chip chip--work" title="Workplace experience">DLP</li>
+            </ul>
+          </div>
+
+          <div class="skill-group card">
+            <h3 class="skill-group__title">Security Awareness &amp; GRC</h3>
+            <ul class="skill-chips" aria-label="Security awareness tools">
+              <li class="chip chip--work" title="Workplace experience">Proofpoint ZenGuide</li>
+              <li class="chip chip--work" title="Workplace experience">KnowBe4</li>
+              <li class="chip chip--work" title="Workplace experience">Phishing simulation support</li>
+              <li class="chip chip--work" title="Workplace experience">ServiceNow</li>
+              <li class="chip chip--work" title="Workplace experience">Technical documentation</li>
+            </ul>
+          </div>
+
+          <div class="skill-group card">
+            <h3 class="skill-group__title">Systems &amp; Investigation</h3>
+            <ul class="skill-chips" aria-label="Systems and investigation tools">
+              <li class="chip chip--work" title="Workplace experience">Windows Active Directory</li>
+              <li class="chip chip--work" title="Workplace experience">Group Policy</li>
+              <li class="chip chip--work" title="Workplace experience">Windows Registry</li>
+              <li class="chip chip--work" title="Workplace experience">PowerShell</li>
+              <li class="chip chip--lab"  title="Home lab / personal projects">Linux fundamentals</li>
+            </ul>
+          </div>
+
+          <div class="skill-group card">
+            <h3 class="skill-group__title">Labs &amp; Networking</h3>
+            <ul class="skill-chips" aria-label="Lab and networking tools">
+              <li class="chip chip--lab" title="Home lab / personal projects">Wazuh SIEM</li>
+              <li class="chip chip--lab" title="Home lab / personal projects">Proxmox</li>
+              <li class="chip chip--lab" title="Home lab / personal projects">Wireshark</li>
+              <li class="chip chip--lab" title="Home lab / personal projects">Nmap</li>
+              <li class="chip chip--lab" title="Home lab / personal projects">Virtualization</li>
+            </ul>
+          </div>
+
+          <div class="skill-group card">
+            <h3 class="skill-group__title">Development</h3>
+            <ul class="skill-chips" aria-label="Development skills">
+              <li class="chip chip--dev" title="ITS certified">Python</li>
+              <li class="chip chip--dev" title="ITS certified">JavaScript</li>
+              <li class="chip chip--dev" title="Coursework / projects">HTML &amp; CSS</li>
+              <li class="chip chip--dev" title="Coursework / projects">Git</li>
+              <li class="chip chip--dev" title="Coursework / projects">Java</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WHERE I'M HEADED ───────────────────────────────────────────────────── -->
+    <section class="section section--alt" id="goals" aria-labelledby="goals-title">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">Where I'm Headed</span>
+          <h2 class="section__title" id="goals-title">What I'm Working Toward</h2>
+        </header>
+
+        <div class="goals-layout">
+          <div class="goals__text">
+            <p>
+              My goal is a hands-on cybersecurity analyst role where I can keep growing across
+              vulnerability management, incident response, and cloud security. I want to be the
+              person who digs into alerts, traces problems to their root cause, and helps teams
+              understand what happened and why.
+            </p>
+            <p>
+              I'm early in my career — I know that. But I'm using every opportunity I have right
+              now to build real depth: the internship, the home lab, the certifications, the
+              workshops. Detection engineering and cloud security are the areas I'm most actively
+              developing toward, and I plan to keep investing in hands-on work and clear documentation
+              of what I learn.
+            </p>
+            <p>
+              If you're working on interesting problems in security and want to talk, I'd genuinely
+              like to hear about it.
+            </p>
+          </div>
+
+          <div class="goals__areas">
+            <h3 class="goals__areas-title">Focus areas</h3>
+            <ul class="goals__list" aria-label="Career focus areas">
+              <li>
+                <span class="goals__icon" aria-hidden="true">◈</span>
+                <div>
+                  <strong>Vulnerability management</strong>
+                  <p>Deepening experience with VMDR workflows, triage, and remediation tracking</p>
+                </div>
+              </li>
+              <li>
+                <span class="goals__icon" aria-hidden="true">◈</span>
+                <div>
+                  <strong>Incident response</strong>
+                  <p>Building investigative skills and understanding how to move through an incident methodically</p>
+                </div>
+              </li>
+              <li>
+                <span class="goals__icon" aria-hidden="true">◈</span>
+                <div>
+                  <strong>Cloud security</strong>
+                  <p>Developing foundational skills in cloud environments and the security challenges they introduce</p>
+                </div>
+              </li>
+              <li>
+                <span class="goals__icon" aria-hidden="true">◈</span>
+                <div>
+                  <strong>Detection engineering</strong>
+                  <p>Expanding home lab work into building and tuning detection rules with real data</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ────────────────────────────────────────────────────────────── -->
+    <section class="section section--dark" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact">
+          <header class="contact__header">
+            <h2 class="contact__title" id="contact-title">Let's connect.</h2>
+            <p class="contact__sub">
+              I'm open to conversations about cybersecurity roles, collaborations, or
+              just talking shop about security. I reply promptly.
+            </p>
+            <a href="assets/9-28-2026JosephJustinResume_.pdf"
+               class="btn btn--teal"
+               target="_blank"
+               rel="noopener"
+               aria-label="Download resume PDF">View Resume ↗</a>
+          </header>
+
+          <div class="contact__links" aria-label="Contact options">
+
+            <a href="mailto:jjosephe1216@gmail.com" class="contact__item">
+              <span class="contact__item-icon" aria-hidden="true">✉</span>
+              <span class="contact__item-info">
+                <strong>Email</strong>
+                <small>jjosephe1216@gmail.com</small>
+              </span>
+              <span class="contact__item-arrow" aria-hidden="true">→</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/jjosephe/"
+               class="contact__item"
+               target="_blank"
+               rel="noopener">
+              <span class="contact__item-icon" aria-hidden="true">in</span>
+              <span class="contact__item-info">
+                <strong>LinkedIn</strong>
+                <small>linkedin.com/in/jjosephe</small>
+              </span>
+              <span class="contact__item-arrow" aria-hidden="true">→</span>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ──────────────────────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <span>© 2026 Justin Joseph</span>
+      <span class="footer__built">Built with HTML &amp; CSS · Hosted on AWS</span>
+      <a href="#top" class="footer__top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Entrance animations — runs only once, respects reduced-motion -->
+  <script>
+    (function () {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      const els = document.querySelectorAll(
+        '.hero__content, .hero__photo, .section__header, .about, ' +
+        '.exp-card, .project, .timeline__item, .skill-group, ' +
+        '.goals-layout, .goals__areas'
+      );
+      const io = new IntersectionObserver(
+        (entries) => entries.forEach(e => {
+          if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+        }),
+        { threshold: 0.08 }
+      );
+      els.forEach(el => { el.classList.add('fade-up'); io.observe(el); });
+    })();
+  </script>
+
+</body>
+</html>
