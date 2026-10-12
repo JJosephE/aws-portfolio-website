@@ -2,6 +2,8 @@
 
 [![Deploy portfolio](https://github.com/JJosephE/aws-portfolio-website/actions/workflows/deploy.yml/badge.svg)](https://github.com/JJosephE/aws-portfolio-website/actions/workflows/deploy.yml)
 
+Portfolio Site: https://d32guqnphzcti8.cloudfront.net/
+
 My personal portfolio website, built with HTML, CSS, and JavaScript. It shares my background, cybersecurity experience, projects, and resume.
 
 The website is hosted on Amazon S3 and served through Amazon CloudFront. GitHub Actions automatically deploys updates when I push changes to the `main` branch.
