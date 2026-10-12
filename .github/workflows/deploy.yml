@@ -1,0 +1,68 @@
+name: Deploy portfolio
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: portfolio-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Prepare frontend files
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s index.html
+          test -d assets
+
+          mkdir -p "$RUNNER_TEMP/portfolio"
+          shopt -s nullglob
+
+          for file in *.html *.css *.js; do
+            cp "$file" "$RUNNER_TEMP/portfolio/"
+          done
+
+          if [ -f signin.jpg ]; then
+            cp signin.jpg "$RUNNER_TEMP/portfolio/"
+          fi
+
+          cp -R assets "$RUNNER_TEMP/portfolio/assets"
+
+      - name: Authenticate to AWS
+        uses: aws-actions/configure-aws-credentials@v6.3.0
+        with:
+          role-to-assume: arn:aws:iam::787909119752:role/GitHubPortfolioDeploy
+          aws-region: us-east-1
+          role-session-name: portfolio-${{ github.run_id }}
+
+      - name: Upload website to S3
+        shell: bash
+        run: |
+          aws s3 sync "$RUNNER_TEMP/portfolio/" \
+            s3://sbg-portfolio-jjosephe/ \
+            --cache-control "public,max-age=300" \
+            --no-progress
+
+      - name: Refresh CloudFront cache
+        shell: bash
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id E3T2D57T0686U1 \
+            --paths "/*"
